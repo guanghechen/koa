@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "sourceMap": true,
     "paths": {
+      "@guanghechen/koa-logger": ["packages/koa-logger/src"],
       "@guanghechen/koa-send-asset": ["packages/koa-send-asset/src"]
     }
   },

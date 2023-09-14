@@ -480,6 +480,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@guanghechen/chalk@npm:^1.0.0-alpha.1":
+  version: 1.0.0-alpha.2
+  resolution: "@guanghechen/chalk@npm:1.0.0-alpha.2"
+  dependencies:
+    "@guanghechen/types": ^1.0.0-alpha.5
+  checksum: f0a7269af89100f67555628880b348d5c15a04811992bf63d69653943679c468c8596a35ee7de21035880c8ce2f9b36304d7a7446d05c811fff0bde49b0a0aca
+  languageName: node
+  linkType: hard
+
+"@guanghechen/constant@npm:^1.0.0-alpha.4":
+  version: 1.0.0-alpha.4
+  resolution: "@guanghechen/constant@npm:1.0.0-alpha.4"
+  checksum: 336362c4f750bf8c6c86d06bc08f25acedd8fed532c2b83bb1fafd1e94c4c01070a4beab822ee3bcbedc5688a9145b05ee4f0e833819c9eed9863c859732a151
+  languageName: node
+  linkType: hard
+
 "@guanghechen/conventional-changelog@npm:^5.0.1":
   version: 5.0.1
   resolution: "@guanghechen/conventional-changelog@npm:5.0.1"
@@ -562,6 +578,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@guanghechen/koa-logger@workspace:packages/koa-logger":
+  version: 0.0.0-use.local
+  resolution: "@guanghechen/koa-logger@workspace:packages/koa-logger"
+  dependencies:
+    "@guanghechen/chalk": ^1.0.0-alpha.1
+    cross-env: ^7.0.3
+    dayjs: ^1.11.9
+    jest: ^29.7.0
+    rimraf: ^5.0.1
+    rollup: ^3.29.1
+  languageName: unknown
+  linkType: soft
+
 "@guanghechen/koa-send-asset@workspace:packages/koa-send-asset":
   version: 0.0.0-use.local
   resolution: "@guanghechen/koa-send-asset@workspace:packages/koa-send-asset"
@@ -642,6 +671,15 @@ __metadata:
   bin:
     ghc-doc-link-rewrite: lib/esm/cli.mjs
   checksum: cfb36d1999ecd629c8bc19a2c15afec95c014e8472be8c9b9de3207e05b59e340c302c5ea6b45bb535b790f7cbad2e4f5682c1e6457b23ea28f3257865db3180
+  languageName: node
+  linkType: hard
+
+"@guanghechen/types@npm:^1.0.0-alpha.5":
+  version: 1.0.0-alpha.5
+  resolution: "@guanghechen/types@npm:1.0.0-alpha.5"
+  dependencies:
+    "@guanghechen/constant": ^1.0.0-alpha.4
+  checksum: 8f0040bc5759320573bea3a86212611c6aa41bd351e533c041807bfafa74c614249876abd697ffc0e56d09b3e8c54ed4117cdbc7483ff9efc00e4c3c9c117f9f
   languageName: node
   linkType: hard
 

@@ -1,0 +1,54 @@
+{
+  "name": "@guanghechen/koa-logger",
+  "version": "1.0.0-alpha.0",
+  "description": "Koa logger (forked from https://github.com/koajs/logger)",
+  "author": {
+    "name": "guanghechen",
+    "url": "https://github.com/guanghechen/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-logger@1.0.0-alpha.0",
+    "directory": "packages/koa-logger"
+  },
+  "homepage": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-logger@1.0.0-alpha.0/packages/koa-logger#readme",
+  "type": "module",
+  "main": "./lib/cjs/index.cjs",
+  "module": "./lib/esm/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.mjs",
+      "require": "./lib/cjs/index.cjs",
+      "source": "./src/index.ts",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "types": "./lib/types/index.d.ts",
+  "source": "./src/index.ts",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "files": [
+    "lib/",
+    "!lib/**/*.map",
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rimraf lib/ && cross-env NODE_ENV=production rollup -c ../../rollup.config.mjs",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@guanghechen/chalk": "^1.0.0-alpha.1",
+    "dayjs": "^1.11.9"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.29.1"
+  }
+}
