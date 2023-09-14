@@ -1,0 +1,50 @@
+{
+  "name": "@guanghechen/koa-send-asset",
+  "version": "1.0.0-alpha.0",
+  "description": "Koa send-asset",
+  "author": {
+    "name": "guanghechen",
+    "url": "https://github.com/guanghechen/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-send-asset@1.0.0-alpha.0",
+    "directory": "packages/koa-send-asset"
+  },
+  "homepage": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-send-asset@1.0.0-alpha.0/packages/koa-send-asset#readme",
+  "type": "module",
+  "main": "./lib/cjs/index.cjs",
+  "module": "./lib/esm/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.mjs",
+      "require": "./lib/cjs/index.cjs",
+      "source": "./src/index.ts",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "types": "./lib/types/index.d.ts",
+  "source": "./src/index.ts",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "files": [
+    "lib/",
+    "!lib/**/*.map",
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rimraf lib/ && cross-env NODE_ENV=production rollup -c ../../rollup.config.mjs",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.29.1"
+  }
+}

@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "sourceMap": true,
     "paths": {
+      "@guanghechen/koa-send-asset": ["packages/koa-send-asset/src"]
     }
   },
   "exclude": ["**/__test__/fixtures"]
