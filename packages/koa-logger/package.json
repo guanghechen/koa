@@ -1,6 +1,6 @@
 {
   "name": "@guanghechen/koa-logger",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Koa logger (forked from https://github.com/koajs/logger)",
   "author": {
     "name": "guanghechen",
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-logger@1.0.0-alpha.0",
+    "url": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-logger@1.0.0-alpha.1",
     "directory": "packages/koa-logger"
   },
-  "homepage": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-logger@1.0.0-alpha.0/packages/koa-logger#readme",
+  "homepage": "https://github.com/guanghechen/koa/tree/@guanghechen/koa-logger@1.0.0-alpha.1/packages/koa-logger#readme",
   "type": "module",
   "main": "./lib/cjs/index.cjs",
   "module": "./lib/esm/index.mjs",
